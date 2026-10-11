@@ -1,0 +1,33 @@
+# --- Core ---
+python-dotenv
+httpx
+
+# --- LangChain core + provider integrations ---
+langchain
+langchain-core
+langchain-community
+
+langchain-groq
+langchain-openai
+langchain-mistralai
+
+langchain-qdrant
+
+
+# --- Provider SDKs (used directly and/or by LangChain integrations above) ---
+groq
+mistralai
+openai
+
+# --- Vector store (Qdrant, used for Bifrost semantic cache + agent retrieval) ---
+qdrant-client
+
+
+# --- Jina embeddings are called over Jina's REST API (via langchain_community.embeddings.JinaEmbeddings) ---
+# no dedicated SDK needed beyond httpx/requests, both already covered above
+requests
+
+
+# --- Notebook / experimentation ---
+jupyter
+ipykernel
